@@ -5,8 +5,7 @@
  */
 
 #mainNav {
-  min-height: 56px;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #mainNav .navbar-toggler {
@@ -21,10 +20,17 @@
 }
 
 #mainNav .navbar-brand {
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 700;
-  padding: 0;
-  font-size: 2rem;
+  color: rgba(91, 53, 71, .8);
+  border: 1px solid rgba(91, 53, 71, .8);
+  border-radius: .25rem;
+  padding: 0.25rem .5rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+#mainNav .navbar-brand:hover {
+  color: rgba(255, 255, 255, .5);
+  border: 1px solid rgba(255, 255, 255, .5);
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -47,16 +53,16 @@
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    /* something */
   }
   #mainNav .nav-link {
-    transition: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(91, 53, 71, .8);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:active {
     color: white;
@@ -92,7 +98,7 @@
   min-height: 35rem;
   padding: 15rem 0;
   /* background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(95, 65, 65, 0.7) 75%, #161616 100%), url("../img/bg-masthead-d.jpg"); */
-  background: linear-gradient(to bottom, rgba(71, 178, 241, .4) 0%, rgba(95, 65, 65, 0.7) 75%, #161616 100%), url("../img/bg-masthead-e.jpg");
+  background: linear-gradient(to bottom, rgba(71, 178, 241, .5) 0%, rgba(91, 53, 71, .5) 75%, #161616 100%), url("../img/bg-masthead-e.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -100,18 +106,25 @@
 }
 
 .masthead h1 {
-  font-family: 'Varela Round';
+  font-family: 'Bellota', cursive;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: rgba(91, 53, 71, .8);
 }
 
 .masthead h2 {
+  color: rgba(91, 53, 71, .8);
   max-width: 20rem;
   font-size: 1rem;
+}
+
+/* Temporary Fix for iPhone X Vertical White Bar Artifact */
+@media (max-width: 768px) {
+  .masthead h1, 
+  .masthead h2 {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -127,9 +140,9 @@
     padding: 0;
   }
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
+    font-size: 6rem;
+    line-height: 6rem;
+    letter-spacing: 0.2rem;
   }
   .masthead h2 {
     max-width: 30rem;
@@ -140,23 +153,23 @@
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
-  font-size: 80%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: rgba(29, 161, 237, .8);
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: rgba(29, 161, 237, .4);
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: rgba(29, 161, 237, .4);
   color: white;
 }
 
@@ -269,7 +282,7 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.0625em;
 }
 
@@ -297,3 +310,10 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+/* Google Fonts
+----
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Bellota', cursive;
+---- */
