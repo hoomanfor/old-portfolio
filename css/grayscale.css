@@ -68,26 +68,31 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #161616;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  #mainNav.navbar-shrink .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #161616;
+    color: rgba(255, 255, 255, 0.5);
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: rgba(255, 255, 255, 0.8);
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -165,29 +170,29 @@
 }
 
 .btn-primary:hover {
-  background-color: rgba(29, 161, 237, .4);
+  background-color: rgba(29, 161, 237, .4) !important;
 }
 
 .btn-primary:focus {
-  background-color: rgba(29, 161, 237, .4);
+  background-color: rgba(29, 161, 237, .4) !important;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: rgba(29, 161, 237, .8) !important;
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 2rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 2rem 0;
 }
 
 .projects-section .featured-text {
@@ -211,7 +216,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: rgba(255, 255, 255, 0.3);
     border-width: .25rem;
     width: 30%;
   }
@@ -279,6 +284,20 @@
 
 .contact-section .social a:active {
   color: #fff;
+}
+
+.project-icon {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.project-icon:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 body {
