@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale v5.0.9 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
- */
-
 #mainNav {
   background-color: rgba(255, 255, 255, 0);
 }
@@ -11,8 +5,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: rgba(91, 53, 71, .8);
+  border: 1px solid rgba(91, 53, 71, .8);
 }
 
 #mainNav .navbar-toggler:focus {
@@ -44,6 +38,48 @@
   background-color: transparent;
 }
 
+#mainNav.navbar-shrink {
+  background-color: #161616;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#mainNav.navbar-shrink .navbar-brand:hover,
+#mainNav.navbar-shrink .navbar-brand:active {
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#mainNav.navbar-shrink .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#mainNav.navbar-shrink .nav-link:active {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#mainNav.navbar-shrink .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#mainNav.navbar-shrink .navbar-toggler:hover,
+#mainNav.navbar-shrink .navbar-toggler:active {
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -51,9 +87,6 @@
     border-bottom: none;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    /* something */
   }
   #mainNav .nav-link {
     font-size: 1.2rem;
@@ -74,7 +107,8 @@
     color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.5);
   }
-  #mainNav.navbar-shrink .navbar-brand:hover {
+  #mainNav.navbar-shrink .navbar-brand:hover,
+  #mainNav.navbar-shrink .navbar-brand:active {
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
   }
@@ -102,7 +136,6 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  /* background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(95, 65, 65, 0.7) 75%, #161616 100%), url("../img/bg-masthead-d.jpg"); */
   background: linear-gradient(to bottom, rgba(71, 178, 241, .5) 0%, rgba(91, 53, 71, .5) 75%, #161616 100%), url("../img/bg-masthead-e.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -112,30 +145,25 @@
 
 .masthead h1 {
   font-family: 'Bellota', cursive;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.4rem;
   color: rgba(91, 53, 71, .8);
 }
 
 .masthead h2 {
   color: rgba(91, 53, 71, .8);
   max-width: 20rem;
-  font-size: 1rem;
-}
-
-/* Temporary Fix for iPhone X Vertical White Bar Artifact */
-@media (max-width: 768px) {
-  .masthead h1, 
-  .masthead h2 {
-    font-size: 10px;
-  }
+  font-size: .8rem;
 }
 
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 4rem;
+  }
+  .masthead h2 {
+    font-size: 1rem;
   }
 }
 
@@ -187,10 +215,6 @@
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
-.about-section p {
-  margin-bottom: 2rem;
-}
-
 .projects-section {
   padding: 2rem 0;
 }
@@ -213,7 +237,7 @@
 
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 3rem;
   }
   .projects-section .project-text hr {
     border-color: rgba(255, 255, 255, 0.3);
@@ -222,33 +246,24 @@
   }
 }
 
-.signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-.signup-section .form-inline input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: 'Varela Round';
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
-
 .contact-section {
   padding: 5rem 0 0;
 }
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid rgba(91, 53, 71, .8);
+}
+
+.contact-section a {
+  color: rgba(91, 53, 71, .8);
+  font-size: 1rem;
+}
+
+.contact-section a:hover,
+.contact-section a:active {
+  color: rgba(91, 53, 71, .5);
+  font-size: 1rem;
 }
 
 .contact-section .card h4 {
@@ -259,7 +274,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: rgba(91, 53, 71, .8);
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -276,6 +291,7 @@
   border-radius: 100%;
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.3);
+  font-size: 1.4rem;
 }
 
 .contact-section .social a:hover {
@@ -294,9 +310,25 @@
   line-height: 3rem;
   border-radius: 100%;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .project-icon:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-icon {
+  color: rgba(91, 53, 71, .5);
+  background-color: rgba(91, 53, 71, .1);
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.contact-icon:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -305,25 +337,18 @@ body {
   letter-spacing: 0.0625em;
 }
 
-a {
-  color: #64a19d;
-}
-
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .bg-black {
   background-color: #161616 !important;
 }
 
-.bg-primary {
-  background-color: #64a19d !important;
-}
-
 .text-primary {
-  color: #64a19d !important;
+  color: rgba(91, 53, 71, .8) !important;
+  font-size: 1.4rem !important;
 }
 
 footer {
